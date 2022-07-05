@@ -1,0 +1,27 @@
+.btn-nosotros{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		align-content:center;
+		width: auto;
+		height: auto;
+		border: none;
+		background: linear-gradient(to bottom, brown, darkred);
+		margin:10px 0;
+	}
+
+	.btn-inicio{
+		@extend .btn-nosotros;
+		background: linear-gradient(to bottom, brown, #221F1F);
+		border-radius: 10px;
+	}
+
+@mixin h3($font-size, $font-weight, $color){
+	font-size: $font-size;
+	font-weight: $font-weight;
+	color: $color;
+}
+
+h3{
+	@include h3(1em, 500, #121111)
+}
